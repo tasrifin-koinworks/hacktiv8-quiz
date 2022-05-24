@@ -25,20 +25,20 @@ func main() {
 	// fmt.Println("Create user success")
 
 	//UPDATE USER
-	newEmail := "newEmailcoba@gmail.com"
-	_, errs := userRepo.UpdateUserByID(4, newEmail)
-	if errs != nil {
-		fmt.Println(errs.Error())
-		return
-	}
+	// newEmail := "newEmailcoba@gmail.com"
+	// _, errs := userRepo.UpdateUserByID(4, newEmail)
+	// if errs != nil {
+	// 	fmt.Println(errs.Error())
+	// 	return
+	// }
 
 	//DELETE USER
-	deleteErr := userRepo.DeleteUser(4)
-	if deleteErr != nil {
-		fmt.Println(deleteErr.Error())
-		return
-	}
-	fmt.Println("Delete user success")
+	// deleteErr := userRepo.DeleteUser(4)
+	// if deleteErr != nil {
+	// 	fmt.Println(deleteErr.Error())
+	// 	return
+	// }
+	// fmt.Println("Delete user success")
 
 	employees, err := userRepo.GetAllUsers()
 
@@ -63,7 +63,7 @@ func main() {
 	emp.Print()
 	fmt.Println("***********************************")
 
-	ProcessProduct()
+	// ProcessProduct()
 
 }
 
